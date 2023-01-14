@@ -79,12 +79,12 @@ export class ContentsComponent implements OnInit {
         isVisible: false,
         indicators: [
           {
-            label: 'INFRAESTRUCTURA FÍSICA',
-            backgroundImage: 'background-image: url(\'assets/images/mejoratec/home/example.jpg\')',
+            label: 'FÍSICA',
+            backgroundImage: 'background-image: url(\'assets/images/mejoratec/home/intraestructura_fisica.jpg\')',
           },
           {
-            label: 'INFRAESTRUCTURA TECNOLÓGICA',
-            backgroundImage: 'background-image: url(\'assets/images/mejoratec/home/example.jpg\')',
+            label: 'TECNOLÓGICA',
+            backgroundImage: 'background-image: url(\'assets/images/mejoratec/home/intraestructura_tecnologica.jpg\')',
           },
         ]
       },

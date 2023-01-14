@@ -9,7 +9,7 @@ const routes: Routes = [
     component: MainComponent,
     // canActivate: [TokenGuard],
     children: [
-      {path: '', redirectTo: '/', pathMatch: 'full'},
+      {path: '', redirectTo: '/auth/authentication/login', pathMatch: 'full'},
       {
         path: 'administration',
         title: 'Administration',
@@ -31,7 +31,7 @@ const routes: Routes = [
   },
   {
     path: 'mejoratec',
-    component:BlankComponent,
+    component: BlankComponent,
     title: 'MEJORATEC',
     loadChildren: () => import('./pages/mejoratec/mejoratec.module').then(m => m.MejoratecModule),
   },
