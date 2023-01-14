@@ -1,0 +1,36 @@
+<div class="login-page">
+  <div class="grid">
+    <div *ngIf="transaction==='login'" class="login-form panel-messages xl:col-12 lg:col-12 md:col-12 sm:col-12">
+      <form [formGroup]="formLogin" (ngSubmit)="onSubmit()" class="p-fluid">
+        <div class="field text-center">
+          <img src="assets/images/mejoratec/home/logo.png" alt="logo">
+        </div>
+        <br>
+        <h1 class="text-center">INGRESO AL SISTEMA</h1>
+        <br>
+        <div class="field">
+          <label for="username">
+            Nombre de Usuario:
+          </label>
+          <input pInputText id="username" formControlName="username">
+        </div>
+
+        <div class="field">
+          <label for="password">
+            Contraseña:
+          </label>
+          <p-password id="password" formControlName="password" [feedback]="false"></p-password>
+
+        </div>
+
+        <div class="formgrid grid">
+          <div class="field xl:col-12 lg:col-12 md:col-12 sm:col-12">
+            <button pButton pRipple label="INGRESAR"
+                    class=""
+                    icon="pi pi-sign-in"></button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

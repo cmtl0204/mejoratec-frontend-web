@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Gotham-Bold;
+  src: url("../../../../../assets/fonts/Gotham-Font/GothamBold.ttf");
+}
+
+.title-header {
+  font-family: Gotham-Bold;
+  font-size: 45px;
+  padding-top: 20px;
+}
+
+.title-header-2 {
+  font-family: Gotham-Bold;
+  font-size: 25px;
+  padding-top: 10px;
+}
+
+.title-logout {
+  font-family: Gotham-Bold;
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.title-areas {
+  font-family: Gotham-Bold;
+  font-size: 45px;
+}
+
+.panel-header {
+  font-family: "Century Gothic", serif;
+  background: #242D58;
+  color: white;
+  height: 120px;
+
+
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  //border-radius: 5px;
+}
+
+.panel-areas {
+  background: #3B52BB;
+  color: white;
+  height: 75px;
+
+  align-items: center;
+  position: fixed;
+  top: 120px;
+  width: 100%;
+  //border-radius: 5px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  background: aliceblue;
+  font-family: sans-serif;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

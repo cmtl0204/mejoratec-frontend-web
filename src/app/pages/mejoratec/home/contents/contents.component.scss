@@ -1,0 +1,67 @@
+.areas {
+  //margin: 50px;
+  padding-top: 200px;
+}
+
+.indicators {
+  //margin: 50px;
+}
+
+.img-content {
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../../../assets/images/mejoratec/home/gestion_academica.jpg");
+  height: 250px;
+  margin: 5px;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+.img-content:hover {
+  //border-radius:10%;
+  //-webkit-border-radius:10%;
+  //box-shadow: 0px 0px 15px 15px yellow;
+  box-shadow: 0px 0px 15px 15px yellow;
+  -webkit-box-shadow: 0px 0px 15px 15px yellow;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+
+.img-text-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+}
+
+.content-button{
+  background-color: white!important;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  color: #242D58;
+  font-size: 14px;
+}
+
+.content-button:hover{
+  background-color: #242D58!important;
+  color: white;
+}
+
+.content-button-disabled{
+  background-color: dimgrey!important;
+  color: white!important;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 14px;
+}

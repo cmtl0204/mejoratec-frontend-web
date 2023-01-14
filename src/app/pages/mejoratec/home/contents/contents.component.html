@@ -1,0 +1,40 @@
+<div class="areas">
+  <div class="grid">
+    <div *ngFor="let area of areas,let i=index"
+         [class]="{'col-offset-4':i===areas.length-1}"
+         class="xl:col-4 lg:col-4 md:col-6 sm:col-12 text-center"
+         (click)="showIndicators(area)">
+      <div [style]="area.backgroundImage" class="img-content">
+        <div style="margin-top: 50px;">
+          <h1>{{area.label}}</h1>
+          <button *ngIf="area.isVisible" class="content-button">Ver Indicadores</button>
+          <button *ngIf="!area.isVisible" class="content-button-disabled" (click)="showIndicators(area)" disabled>Ver
+            Indicadores
+          </button>
+          <!--          <button *ngIf="area.isVisible" pButton label="Ver Indicadores" class="content-button" (click)="showIndicators(area)"></button>-->
+          <!--          <button *ngIf="!area.isVisible" pButton label="Proximamente" class="content-button-disabled" disabled></button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p-dialog [header]="'INDICADORES - '+ this.mejoratecService.getArea"
+          [(visible)]="display"
+          [modal]="true"
+          [style]="{width: '50vw'}">
+  <div class="indicators">
+    <div class="grid">
+      <div *ngFor="let indicator of indicators,let i=index"
+           [class]="{'col-offset-4':i===areas.length-1}"
+           class="xl:col-12 lg:col-12 md:col-12 sm:col-12 text-center"
+           (click)="showResults(indicator)">
+        <div [style]="indicator.backgroundImage" class="img-content">
+          <h1>{{indicator.label}}</h1>
+          <button pButton label="Mostrar Resultados"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</p-dialog>
+
